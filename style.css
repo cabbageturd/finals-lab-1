@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0e2d; /* Matching the dark blue background from the prompt */
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Container to hold the floating elements */
+.container {
+    width: 100%;
+    overflow: hidden; /* Clearfix hack */
+}
+
+/* Sidebar (Left column) */
+.sidebar {
+    float: left;
+    width: 30%;
+    background-color: #7fffd4; /* Aquamarine for CatCSS */
+    padding: 15px;
+    border: 2px solid black;
+    min-height: 300px;
+}
+
+/* Main Content (Right column) */
+.main-content {
+    float: left;
+    width: 68%;
+    margin-left: 2%; /* Gap between columns */
+    background-color: #ffaa71; /* Orange for DogCSS */
+    padding: 15px;
+    border: 2px solid black;
+    min-height: 300px;
+}
+
+/* Image handling within boxes */
+img {
+    float: left;
+    margin-right: 15px;
+    border: 1px solid #333;
+}
+
+/* Footer Styling */
+footer {
+    clear: both; /* Crucial: stops the footer from floating */
+    background-color: #7a2bc2; /* Purple footer from image 2 */
+    color: black;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+/* General Setup */
+body {
+    background-color: #0b0e2d; /* Dark blue background */
+    color: white;
+    font-family: sans-serif;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+.page-wrapper {
+    overflow: hidden; /* Clearfix for the main containers */
+}
+
+/* Common Box Styles */
+.box {
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    height: 200px; /* Adjust height as needed */
+}
+
+.red { background-color: red; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+
+/* Horizontal Layout using Float */
+.horizontal-container {
+    float: left;
+    background-color: white;
+    padding: 10px;
+    width: 60%;
+    margin-right: 5%;
+}
+
+.horizontal-container .box {
+    float: left;
+    width: 33.33%; /* Divide into three equal columns */
+    border: 2px solid white; /* Visual separation */
+}
+
+/* Vertical Layout */
+.vertical-container {
+    float: left;
+    background-color: white;
+    padding: 10px;
+    width: 20%;
+}
+
+.vertical-container .box {
+    width: 100%; /* Stacks boxes vertically */
+    margin-bottom: 10px;
+}
+
+/* Fix for the last vertical box margin */
+.vertical-container .box:last-child {
+    margin-bottom: 0;
+}
